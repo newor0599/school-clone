@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+body{
+  display:grid;
+  background:linear-gradient(180deg, rgb(22 22 60), rgb(15 15 15));
+  grid-template-rows:1fr;
+  grid-template-columns:50px 1fr;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
