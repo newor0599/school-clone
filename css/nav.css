@@ -4,7 +4,7 @@
   width:200px;
   height:260px;
   justify-self:start;
-  background:rgba(100,100,100,.1);
+  background:rgba(22,22,22,.5);
   backdrop-filter:blur(10px);
   padding:5px;
   border-radius:5px;
@@ -14,7 +14,7 @@
 
 #nav_bar{
   overflow:hidden;
-  background:rgba(100,100,100,.2);
+  background:rgba(22,22,22,.5);
   backdrop-filter:blur(10px);
   grid-area:1/1/1/1;
   z-index:3;
@@ -34,6 +34,7 @@
 #nav_bar.active>#pages>button{
   display:inline-block;
   color:rgb(29 148 181);
+  border-radius:10px;
   background:none;
   border:none;
   outline:none;
