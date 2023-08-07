@@ -4,41 +4,16 @@
 #post-frame{
   display:grid;
   width:100%;
-  grid-template-columns:repeat(3,1fr)
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr))
 }
 
-@media screen and (max-width: 1200px){
-  #post-frame{
-    grid-template-columns:repeat(3,1fr);
-  }
-  #post{
-    justify-self:center;
-  }
-}
-
-@media screen and (max-width:1000px){
-  #post-frame{
-    grid-template-columns:repeat(2,1fr);
-  }
-  #post{
-    justify-self:center;
-  }
-}
-
-@media screen and (max-width:840px){
-  #post-frame{
-    grid-template-columns:1fr;
-  }
-  #post{
-    justify-self:center;
-  }
-}
 
 #post{
+  width:300px;
+  height:200px;
   font-family: 'Lexend', sans-serif;
   display:flex;
   flex-direction:column;
-  width:300px;
   margin:10px;
   border:4px solid rgb(29 148 181);
   position:relative;
@@ -46,7 +21,15 @@
   overflow:hidden;
   transition:.5s ease;
   align-self:center;
+  justify-self:center;
   background:rgb(255 255 255);
+  animation: fadeIn .5s ease-out forwards;
+}
+
+
+
+#post:hover::after{
+  opacity:0;
 }
 
 #post:hover{
@@ -72,6 +55,7 @@
 
 #post>img{
   align-self:center;
+
 }
 
 #post>label{
@@ -81,4 +65,15 @@
   bottom:0;
   margin:10px;
   transition:.5s ease;
+}
+
+@keyframes fadeIn {
+  from{
+  opacity: 0;
+  transform:translateY(-10px);
+}
+  to{
+  opacity: 1; 
+  transform:translateY(0px);
+}
 }

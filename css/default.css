@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+*{
+  font-family: 'Lexend', sans-serif;
+}
+
 body{
   display:grid;
-  background:linear-gradient(180deg, rgb(22 22 60), rgb(15 15 15));
-  grid-template-rows:1fr;
+  background:rgb(22 22 22);
+  grid-template-rows:50px 1fr;
   grid-template-columns:50px 1fr;
 }
 
