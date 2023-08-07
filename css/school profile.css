@@ -1,0 +1,22 @@
+#profile-frame{
+    display:grid;
+    flex-direction: column;
+}
+
+.info{
+    display:flex;
+    border:3px solid rgb(222 222 222);
+    justify-content: center;
+    color: rgb(222 222 222);
+    margin:10px;
+    padding:10px;
+    width:500px;
+    height:100px;
+    align-self: center;
+    justify-self: center;
+}
+
+.info>span{
+    text-align: center;
+    margin:10px;
+}

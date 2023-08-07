@@ -66,18 +66,18 @@ for (i=6;i<posts.length;i++){
   post_frame = document.createElement("div")
   post_frame.id = "post"
 
-  post_img = document.createElement("img");
-  post_img.src = posts[i]["image"]
-  post_img.id = "post-img"
+  post_frame.style.background = `url(${posts[i]["image"]})`
+  post_frame.style.backgroundPosition = "center";
+  post_frame.style.backgroundRepeat = "no-repeat"
 
   post_des = document.createElement("label")
   post_des.id = "post-des"
   post_des.innerText = posts[i]["des"]
 
-  post_frame.appendChild(post_img)
   post_frame.appendChild(post_des)
-  console.log(post_frame)
+  post_frame.style.opacity = "0"
+  post_frame.style.animationDelay = `${(i-6)*.1}s`
+
   content_frame = document.getElementById("post-frame");
-  console.log(content_frame)
   content_frame.appendChild(post_frame);
 }
