@@ -7,7 +7,11 @@ body{
   width:90vw;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
-  grid-area:2/2/-1/-1
+  grid-area:2/2/-1/-1;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #t-frame{
@@ -83,6 +87,7 @@ body{
   width:100px;
   border-radius:1px;
   transition:.5s ease;
+  grid-area: 1/2/2/3;
 }
 
 #search-bar:focus{

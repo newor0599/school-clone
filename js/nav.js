@@ -8,6 +8,9 @@ hamburger.onclick = function(){
 main = document.getElementById("main")
 profile = document.getElementById("school")
 t_list = document.getElementById("t-list")
+contact = document.getElementById("contact")
+
+
 main.onclick = function(){
   window.location.replace("home_page.html")
 }
@@ -18,4 +21,8 @@ t_list.onclick = function () {
 
 profile.onclick = function(){
   window.location.replace("school profile.html")
+}
+
+contact.onclick = ()=>{
+  window.location.replace("contact us.html")
 }

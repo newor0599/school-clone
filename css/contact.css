@@ -1,0 +1,17 @@
+.frame{
+    color:rgb(222 222 222);
+    border: 3px solid rgb(222 222 222);
+    padding:10px;
+    border-radius: 10px;
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.frame>div>span:first-child{
+    color:rgb(29 148 181);
+}
+
+.info-frame{
+    grid-area: 2/2/-1/-1;
+}
