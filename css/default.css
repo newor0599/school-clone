@@ -9,6 +9,7 @@ body{
   background:rgb(22 22 22);
   grid-template-rows:50px 1fr;
   grid-template-columns:50px 1fr;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {

@@ -1,28 +1,43 @@
-/*This is the school profile css*/
-/*Luiz is very very very very very loyal to hayley*/
-/*temp*/
-
-/*Luiz moan to the direction of hayley*/
-
 #profile-frame{
     display:grid;
-    flex-direction: column;
+    justify-content: start;
+    justify-self: center;
 }
 
 .info{
     display:flex;
     border:3px solid rgb(222 222 222);
     justify-content: center;
+    align-items: center;
     color: rgb(222 222 222);
     margin:10px;
     padding:10px;
-    width:500px;
-    height:100px;
     align-self: center;
     justify-self: center;
+    border-radius: 10px;
+    max-width: 550px;
+    flex-wrap: wrap;
 }
+
+.info>span:first-child{
+    color:rgb(29 148 181);
+}
+
+
+img{
+    width:70px;
+}
+
 
 .info>span{
     text-align: center;
     margin:10px;
+}
+
+#session>div{
+    display:flex;
+    flex-direction: column;
+}
+#session>div>span{
+    margin:5px;
 }
